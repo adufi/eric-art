@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+
+{% block page_header %}
+    <!-- Grids -->
+    <div class="grids d-flex justify-content-between">
+        <div class="grid1"></div>
+        <div class="grid2"></div>
+        <div class="grid3"></div>
+        <div class="grid4"></div>
+        <div class="grid5"></div>
+        <div class="grid6"></div>
+        <div class="grid7"></div>
+        <div class="grid8"></div>
+        <div class="grid9"></div>
+    </div>
+{% endblock %}
+
+
+{% block page_content %}
+
+    <!-- ***** Hero Area Start ***** -->
+    <div class="hero-area d-flex align-items-center">
+        <!-- Hero Thumbnail -->
+        <div class="hero-thumbnail equalize bg-img" style="background-image: url({{ url_for('static', filename='img/bg-img/portfolio.jpg') }});"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content equalize">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <div class="line"></div>
+                        <h2>Au coeur de ma gallerie</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui.</p>
+                        <!--
+                            <a href="#" class="btn sonar-btn white-btn">contact me</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Menu -->
+        <div class="sonar-portfolio-menu">
+            <div class="text-center portfolio-menu">
+                <button class="btn active" data-filter="*">Tout</button>
+                <button class="btn" data-filter=".landscapes">Paysages</button>
+                <button class="btn" data-filter=".portraits">Peintures</button>
+                <button class="btn" data-filter=".fashion">Pastel</button>
+                <button class="btn" data-filter=".studio">Autres</button>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Hero Area End ***** -->
+
+    <!-- ****** Gallery Area Start ****** -->
+    <section class="sonar-projects-area" id="projects">
+        <div class="container-fluid">
+            <div class="row sonar-portfolio">
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/1.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/1.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/2.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/2.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="700ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/3.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/3.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig" data-wow-delay="900ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/4.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/4.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig" data-wow-delay="300ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/5.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/5.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/6.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/6.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig" data-wow-delay="700ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/7.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/7.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig" data-wow-delay="900ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/8.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/8.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/9.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/9.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="500ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/10.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/10.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait  &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes wow fadeInUpBig" data-wow-delay="700ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/13.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/13.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>Mountains in the mist</h4> -->
+                        <p>Paysages &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="900ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/12.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/12.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+
+                <!-- Single gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="900ms">
+                    <a class="gallery-img" href="{{ url_for('static', filename='img/portfolio-img/14.jpg') }}"><img src="{{ url_for('static', filename='img/portfolio-img/14.jpg') }}" alt=""></a>
+                    <!-- Gallery Content -->
+                    <div class="gallery-content">
+                        <!-- <h4>A beautifull encounter</h4> -->
+                        <p>Portrait &#183; <span class="sold">Vendu</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn sonar-btn">Load More</a>
+                    </div>
+                </div>
+            -->
+        </div>
+    </section>
+    <!-- ****** Gallery Area End ****** -->
+{% endblock %}
