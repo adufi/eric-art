@@ -1,14 +1,16 @@
 # Eric-art
 
 ## FR
-Eric-art est un portfolio pour ma soeur peintre.
-Le thème utilisé est Sonar par Joefrer sur Colorlib. Puis a été adapté en Python avec le framework Flask.
+Eric-art est un portfolio pour ma soeur artiste.  
 
-Le site est encore inaché, il manque encore des textes biographiques.
+Le thème utilisé est Sonar, puis a été adapté en Python avec Flask. 
+
+Le site est encore inachevé, il manque des textes biographiques
 
 
 ## EN
-Eric-art is a portfolio for my sister painter.
-The theme used is Sonar by Joefrer on Colorlib. Then was adapted in Python with the Flask framework.
+Eric-art is a portfolio for my sister artist. 
 
-The site is still unfinished, it still lacks biographical texts.
+The theme used is Sonar, then has been adapted in Python with Flask. 
+
+The site is still unfinished, it lacks biographical texts. 
